@@ -8,7 +8,7 @@ categories :
 - ubuntu
 - zabbix
 tags : [zabbix, ubuntu hardy, plesk, legacy, tutorial]
-intro: "<img alt='pain-in-the-ass' src='http://barkingcode.pierrelhoste.fr/img/zabbix-ubuntu-hardy-plesk.jpg'/> INstalling latest version of Zabbix on Legacy Ubuntu with Plesk <strong>on top of it all</strong><br /><br /><strong>Use Case:</strong> You boss wants you to do it ! You have no choice, you need to use Awesome Zabbix on that old hosted Plesk Server. But we won't settle for less than Zabbix 2.0, no way !"
+intro: "<img alt='pain-in-the-ass' src='http://barkingcode.pierrelhoste.fr/img/2012-06-30-zabbix-ubuntu-hardy-plesk.jpg'/> INstalling latest version of Zabbix on Legacy Ubuntu with Plesk <strong>on top of it all</strong><br /><br /><strong>Use Case:</strong> You boss wants you to do it ! You have no choice, you need to use Awesome Zabbix on that old hosted Plesk Server. But we won't settle for less than Zabbix 2.0, no way !"
 ---
 {% include JB/setup %}
 
