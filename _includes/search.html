@@ -1,13 +1,11 @@
 <div id="cse-search-form" style="width: 100%;box-shadow: 0pt 0pt 4px rgb(204, 204, 204)">Loading</div>
-<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script src="http://www.google.fr/jsapi" type="text/javascript"></script>
 <script type="text/javascript"> 
-  google.load('search', '1', {language : 'en', style : google.loader.themes.MINIMALIST});
+  google.load('search', '1', {language : 'en', style : google.loader.themes.SHINY});
   google.setOnLoadCallback(function() {
     var customSearchOptions = {};  var customSearchControl = new google.search.CustomSearchControl(
-      '011943434776748202777:bwrtifwrjam', customSearchOptions);
+      '005871170432255013364:oyop6ekmaz0', customSearchOptions);
     customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
-    var options = new google.search.DrawOptions();
-    options.enableSearchboxOnly("http://www.google.com/cse?cx=011943434776748202777:bwrtifwrjam", null, true);
-    customSearchControl.draw('cse-search-form', options);
+    customSearchControl.draw('cse');
   }, true);
 </script>
