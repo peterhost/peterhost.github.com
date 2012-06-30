@@ -350,6 +350,7 @@ padding: 15px 15px 15px 0;
 .post .content .description img {
     /*width: 380px;*/
     width:256px;
+    padding-left: 62px;
 }
 
 .post .description img {
