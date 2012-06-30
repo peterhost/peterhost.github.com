@@ -353,6 +353,7 @@ padding: 15px 15px 15px 0;
 
 .post .description img {
     padding: 15px 0px 15px 0px;
+    width:256px;
 }
 .description + .description {
 margin-top:0;
