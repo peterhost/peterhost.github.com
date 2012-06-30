@@ -30,9 +30,9 @@ HTML
   end
   html << '</div></ul>'
 
-  if category == 'R'
-    html << '<br/>If you\'r into R,  <a href="http://www.r-bloggers.com/" class="alt">R-bloggers</a> is a good source of R news'
-  end
+  #if category == 'R'
+  #  html << '<br/>If you\'r into R,  <a href="http://www.r-bloggers.com/" class="alt">R-bloggers</a> is a good source of R news'
+  #end
 
   File.open("./tags/#{category}.html", 'w+') do |file|
     file.puts html
