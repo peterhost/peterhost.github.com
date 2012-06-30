@@ -1,8 +1,14 @@
 
 ---
 layout: post
-category : tutorials
+title: Installing Zabbix 2.0.1 on Legacy Ubuntu Hardy 8.0.4 (with Plesk)
+categories :
+- tutorials
+- plesk
+- ubuntu
+- zabbix
 tags : [zabbix, ubuntu hardy, plesk, legacy, tutorial]
+intro: "<img alt='pain-in-the-ass' src='http://barkingcode.pierrelhoste.fr/img/covers/zabbix-ubuntu-hardy-plesk'/> INstalling latest version of Zabbix on Legacy Ubuntu with Plesk <strong>on top of it all</strong><br /><br /><strong>Use Case:</strong> You boss wants you to do it ! You have no choice, you need to use Awesome Zabbix on that old hosted Plesk Server. But we won't settle for less than Zabbix 2.0, no way !"
 ---
 {% include JB/setup %}
 
