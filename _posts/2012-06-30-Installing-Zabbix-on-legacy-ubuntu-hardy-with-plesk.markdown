@@ -2,13 +2,11 @@
 ---
 layout: post
 title: Installing Zabbix 2.0.1 on Legacy Ubuntu Hardy 8.0.4 (with Plesk)
-categories :
-- tutorials
-- plesk
-- ubuntu
-- zabbix
-tags : [zabbix, ubuntu hardy, plesk, legacy, tutorial]
-intro: "<img alt='pain-in-the-ass' src='http://barkingcode.peterhost.fr/img/covers/2012-06-30-zabbix-ubuntu-hardy-plesk.jpg'/> Installing latest version of Zabbix on Legacy Ubuntu with Plesk <strong>on top of it all</strong> is, yes you've guessed it, a real pain in the ass.<br /><br /><strong>Use Case:</strong> You boss wants you to do it ! You have no choice, you need to use Awesome Zabbix on that old hosted Plesk Server. IT's in production, hosts a bazillion emails accounts and you're so excited at the prospect of accidentally removing one of Plesk's dependancies. You can go with Zabbix 1.6.5-2,... but hell no ! We won't settle for less than Zabbix 2.0, no way !"
+categories: tutorials, plesk, ubuntu, zabbix
+tags: zabbix, ubuntu hardy, plesk, legacy, tutorial
+intro: "Installing latest version of Zabbix on Legacy Ubuntu with Plesk <strong>on top of it all</strong> is, yes you've guessed it, a real pain in the ass.<br /><br /><strong>Use Case:</strong> You boss wants you to do it ! You have no choice, you need to use Awesome Zabbix on that old hosted Plesk Server. IT's in production, hosts a bazillion emails accounts and you're so excited at the prospect of accidentally removing one of Plesk's dependancies. You can go with Zabbix 1.6.5-2,... but hell no ! We won't settle for less than Zabbix 2.0, no way !"
+intro-img: "2012-06-30-zabbix-ubuntu-hardy-plesk.jpg"
+
 ---
 
 #PURPOSE
@@ -34,7 +32,7 @@ intro: "<img alt='pain-in-the-ass' src='http://barkingcode.peterhost.fr/img/cove
 #PRE-REQUISITE
 
 
-## Get things done
+## Getting things done
 
 * Do all the `aptitude` package installing under `root` account, or `sudo` if you prefer
 * then `su` as another user with limited rights for the `download-sources/configure/build`
@@ -44,15 +42,8 @@ intro: "<img alt='pain-in-the-ass' src='http://barkingcode.peterhost.fr/img/cove
   to system folders by default. Your user account should be fine.
 * then once `zabbix` is built, package it under the root account (more at the end of this tutorial)
 * then only, deploy that `packed build` on a production server, making uninstalling it painless and safer.
+* Always use aptitude's "simulate" option first
 
-##Build tools
-
-
-We want to be able to build packages at the end of the process for one reason :
-
-Packages are easy to install/remove : usually `make uninstall` will clean up a borked install, but not always totally realiable. Reason why you **should always copy the output of a `make install`command** for later reference if you have to clean up a mess by hand.
-
-##Always use "simulate" option first
 Do:
 
     $ aptitude  -s  install build-essential checkinstall
@@ -63,13 +54,20 @@ Then :
 
     $ aptitude  install build-essential checkinstall
 
+##Build tools
+
+
+We want to be able to build a package at the end of the process for one reason :
+
+Packages are easy to install/remove : usually `make uninstall` will clean up a borked install, but not always totally realiable. Reason why you **should always copy the output of a `make install`command** for later reference if you have to clean up a mess by hand.
+
 
 ##Zabbix CONFIGURE script
 
 ###Configure options
 
 
-I want my Zabbix built the following way :
+We're not here yet, but for the record, I want my Zabbix built the following way :
 
 
 > Which implies the following `configure` options passed as arguments 
@@ -82,7 +80,7 @@ Don't hesitate to remove the options you don't need, and then in the **Installin
 note : `--enable-java` is not recommended, because Plesk uses it's own `java`, and even if the configure passes, you will get errors at compile time with the default on Ubuntu Hardy LTS + Plesk (might be different on a more recent Ubuntu release)
 
 
->And results in a CLEAN :
+####The configure script should end with a clean :
 
 
     Configuration:
@@ -131,6 +129,13 @@ note : `--enable-java` is not recommended, because Plesk uses it's own `java`, a
     *              <http://www.zabbix.com>                    *
     ***********************************************************
 
+####Configure options (for information):
+
+    $ ./configure --help
+
+The output is copied at the bottom of this tutorial, for reference
+
+
 ###Database Backend :
 
 Here, you'll need to choose one of these (and only one) depending on your prefered backend
@@ -164,21 +169,18 @@ It's most of the time just a matter of
 
     # Which yields : (line preceded by >> is usually what you want) (added by myself)
 
-    p purged           <none>     hardy    4.6.99+svn   gforge-db-postgresql           none       universe collaborative development tool - data
-    p purged           <none>     hardy    4.6.99+svn   gforge-shell-postgresql        none       universe collaborative development tool - shel
-    p purged           <none>     hardy    1.1.4.1.0    libghc6-hdbc-postgresql-dev    none       universe PostgreSQL HDBC (Haskell Database Con
-    p purged           <none>     hardy    1.7-1        libghc6-hsql-postgresql-dev    none       universe PostgreSQL driver of the HSQL library
-    p purged           <none>     hardy-up 1.6.1-2ubu   libgnadepostgresql-dev         none       universe GNat Ada Database Environment - Postg
-    p purged           <none>     hardy    1.7.0-2bui   libpostgresql-ocaml-dev        none       universe OCaml bindings to PostgreSQL's libpq 
-    p purged           <none>     hardy    8.2.7-1      postgresql-server-dev-8.2      none       universe development files for PostgreSQL 8.2 
+      p purged           <none>     hardy    4.6.99+svn   gforge-db-postgresql           none       universe collaborative development tool - data
+      p purged           <none>     hardy    4.6.99+svn   gforge-shell-postgresql        none       universe collaborative development tool - shel
+      p purged           <none>     hardy    1.1.4.1.0    libghc6-hdbc-postgresql-dev    none       universe PostgreSQL HDBC (Haskell Database Con
+      p purged           <none>     hardy    1.7-1        libghc6-hsql-postgresql-dev    none       universe PostgreSQL driver of the HSQL library
+      p purged           <none>     hardy-up 1.6.1-2ubu   libgnadepostgresql-dev         none       universe GNat Ada Database Environment - Postg
+      p purged           <none>     hardy    1.7.0-2bui   libpostgresql-ocaml-dev        none       universe OCaml bindings to PostgreSQL's libpq 
+      p purged           <none>     hardy    8.2.7-1      postgresql-server-dev-8.2      none       universe development files for PostgreSQL 8.2 
     >>p purged           <none>     hardy-up 8.3.19-0ub   postgresql-server-dev-8.3      none       libdevel development files for PostgreSQL 8.3     
 
-###Configure options (for information):
+of for a `sometool`'s lib :
 
-    $ ./configure --help
-
-The output is copied at the bottom of this tutorial, for reference
-
+    $ aptitude search sometool | grep lib | grep dev
 
 
 ##Installing Zabbix's BUILD Dependencies

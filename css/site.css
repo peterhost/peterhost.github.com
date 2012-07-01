@@ -39,7 +39,7 @@ body {
 }
 
 .bott-patt {
-  background: url("http://al3xandr3.github.com/img/rep-bg-bottom.png") repeat-x bottom left;
+  background: url("http://barkingcode.peterhost.fr/img/rep-bg-bottom.png") repeat-x bottom left;
 }
 ol, ul {
   list-style: none;
@@ -120,7 +120,7 @@ table {
 /* - - CLEAR FLOTS END - - */
 
 body {
-  background-image: url("http://al3xandr3.github.com/img/bgnoise.gif");
+  background-image: url("http://barkingcode.peterhost.fr/img/bgnoise.gif");
   background-attachment: fixed;
   background-color: #EEEEEE;
   background-position: left 40px;
@@ -261,7 +261,7 @@ margin-bottom: 60px;
 
 pre, code, tt {
     background-color: #F7F7F7;
-//    border: 1px solid #DEDEDE;
+/*    border: 1px solid #DEDEDE;*/
     font: 0.9em/1.5 'andale mono','lucida console', monospace;
     overflow: auto;
     padding: 0.25em 0.5em 0.5em !important;
@@ -274,33 +274,37 @@ border-top:0 none;
 }
 .post .sidebar {
 float:right;
-padding: 20px 0 0;
+/*padding: 20px 0 0;*/
+padding: 0 0 0;
 width:21em;
 position:absolute;
 right:0;
 top:0;
 
 }
+
+
+
 .sidebar ul {
   list-style-type: none;
 }
 .sidebar ul li {
-  background:url("http://al3xandr3.github.com/img/li-border.png") no-repeat scroll right bottom transparent;
+  background:url("http://barkingcode.peterhost.fr/img/li-border.png") no-repeat scroll right bottom transparent;
 font-size:12px;
 font-weight:bold;
 line-height:20px;
 padding:5px 10px;
 }
 .sidebar ul li.notes a {
-  background: url("http://al3xandr3.github.com/img/notes.png") no-repeat 0 1px;
+  background: url("http://barkingcode.peterhost.fr/img/notes.png") no-repeat 0 1px;
   padding: 1px 0 5px 22px;
 }
 .sidebar ul li.permalink a {
-  background: url("http://al3xandr3.github.com/img/permalink.png") no-repeat 0 0;
+  background: url("http://barkingcode.peterhost.fr/img/permalink.png") no-repeat 0 0;
   padding: 1px 0 5px 22px;
 }
 .sidebar ul li.date {
-  background: url("http://al3xandr3.github.com/img/date-bg.png") no-repeat 0 0;
+  background: url("http://barkingcode.peterhost.fr/img/date-bg.png") no-repeat 0 0;
   padding: 14px 0 14px 30px;
   width: 210px;
 }
@@ -310,6 +314,8 @@ padding:5px 10px;
   font-weight:bold;
   text-shadow: 0 1px 2px #000;
 }
+
+
 .post .sidebar a {
 color:#555555;
 text-decoration:none;
@@ -347,11 +353,8 @@ margin-top:2em;
 padding: 15px 15px 15px 0;
 }
 
-.post .content .description img {
-    /*width: 380px;*/
-    width:256px;
-    padding-left: 62px;
-}
+
+
 
 .post .description img {
     padding: 15px 0px 15px 0px;
@@ -385,7 +388,7 @@ margin-top:0;
   padding-bottom: 30px;
   padding-top:30px;
   text-align:center;
-  background: url("http://al3xandr3.github.com/img/li-border.png") repeat-x scroll top left transparent;
+  background: url("http://barkingcode.peterhost.fr/img/li-border.png") repeat-x scroll top left transparent;
 }
 #footer .search {
   float: right;
@@ -393,7 +396,7 @@ margin-top:0;
   width: 280px;
 }
 #footer .search input[type="text"] {
-  background: url("http://al3xandr3.github.com/img/input_bg.gif") repeat-x scroll center top #FFFFFF;
+  background: url("http://barkingcode.peterhost.fr/img/input_bg.gif") repeat-x scroll center top #FFFFFF;
   border: 1px solid #BBBBBB;
   font: 120% Helvetica,Arial,sans-serif;
   margin-right: 0.5em;
@@ -427,7 +430,7 @@ margin-right:2px;
 color:#3b3b3b;
 display:block;
 font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-font-size:30px;
+font-size:15px;
 letter-spacing:0;
 line-height:1em;
 margin:0 0 22px;
@@ -546,29 +549,29 @@ text-decoration:none;
   left: -45px;
 }
 .text-post {
-  background: url("http://al3xandr3.github.com/img/text.png") no-repeat;
+  background: url("http://barkingcode.peterhost.fr/img/text.png") no-repeat;
 }
 .image-post {
-  background: url("http://al3xandr3.github.com/img/photo.png") no-repeat;
+  background: url("http://barkingcode.peterhost.fr/img/photo.png") no-repeat;
 }
 .quote-post {
-  background: url("http://al3xandr3.github.com/img/quote.png") no-repeat;
+  background: url("http://barkingcode.peterhost.fr/img/quote.png") no-repeat;
 }
 .link-post {
-  background: url("http://al3xandr3.github.com/img/link.png") no-repeat;
+  background: url("http://barkingcode.peterhost.fr/img/link.png") no-repeat;
 }
 .video-post {
-  background: url("http://al3xandr3.github.com/img/video.png") no-repeat;
+  background: url("http://barkingcode.peterhost.fr/img/video.png") no-repeat;
 }
 .chat-post {
-  background: url("http://al3xandr3.github.com/img/chat.png") no-repeat;
+  background: url("http://barkingcode.peterhost.fr/img/chat.png") no-repeat;
 }
 p.tags {
   padding-left: 22px;
   line-height: 25px !important;
   margin-top: 10px !important;
   margin-left: 10px;
-  background: url("http://al3xandr3.github.com/img/tags.png") no-repeat 0 5px;
+  background: url("http://barkingcode.peterhost.fr/img/tags.png") no-repeat 0 5px;
 }
 p.tags a {
   padding: 5px 9px;
@@ -578,7 +581,7 @@ p.tags a {
   margin-right: 3px;
 }
 div.quote {
-  background: #008BBF url("http://al3xandr3.github.com/img/quote-shadow.png") no-repeat top center !important;
+  background: #008BBF url("http://barkingcode.peterhost.fr/img/quote-shadow.png") no-repeat top center !important;
 }
 div.quote h4 {
   color: #000 !important;
@@ -600,7 +603,7 @@ div.quote h4 {
   margin-right: 10px;
 }
 a.previous-page {
-  background: url("http://al3xandr3.github.com/img/previous.png") no-repeat;
+  background: url("http://barkingcode.peterhost.fr/img/previous.png") no-repeat;
   height: 40px;
   width: 40px;
   text-indent: -9999em;
@@ -608,7 +611,7 @@ a.previous-page {
   float: left;
 }
 a.next-page {
-  background: url("http://al3xandr3.github.com/img/next.png") no-repeat;
+  background: url("http://barkingcode.peterhost.fr/img/next.png") no-repeat;
   height: 40px;
   width: 40px;
   text-indent: -9999em;
@@ -624,6 +627,9 @@ a.next-page {
   width: 0;
   height: 0;
 }
+
+
+
 
 /* http://perishablepress.com/press/2009/12/06/new-clearfix-hack */
 
