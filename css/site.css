@@ -81,6 +81,8 @@ table {
 /* - - - RESET STYLES END - - */
 
 
+
+
 /* `Clear Floated Elements
 ----------------------------------------------------------------------------------------------------*/
 
@@ -342,7 +344,7 @@ background:none repeat scroll 0 0 #FFFFFF;
 margin-right:23.5em;
 min-height:7.2em;
 padding: 30px;
-width: 600px;
+width: 700px;
 -moz-box-shadow: 0 0 5px #CCC;
 -webkit-box-shadow: 0 0 5px #CCC;
 box-shadow: 0 0 4px #CCC;
@@ -652,3 +654,18 @@ a.next-page {
 *:first-child+html .clearfix {
   zoom: 1;
 }
+
+
+
+
+
+
+
+pre {
+ white-space: pre-wrap;       /* css-3 */
+ white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+ white-space: -pre-wrap;      /* Opera 4-6 */
+ white-space: -o-pre-wrap;    /* Opera 7 */
+ word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
