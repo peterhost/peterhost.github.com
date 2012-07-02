@@ -657,7 +657,9 @@ a.next-page {
 
 
 
-
+/*
+ *  MINE : corrections mises à la fin pour over-rider le reste
+ */
 
 
 
@@ -669,3 +671,8 @@ pre {
  word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 
+#post-content h2 {
+  font-family: 'Questrial', sans-serif;
+  font-size: 2.5em;
+
+}

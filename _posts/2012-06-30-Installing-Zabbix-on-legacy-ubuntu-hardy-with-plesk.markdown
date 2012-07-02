@@ -9,6 +9,7 @@ intro-img: "2012-06-30-zabbix-ubuntu-hardy-plesk.jpg"
 
 ---
 
+
 #PURPOSE
 
 * You need a recent Zabbix server (>=2.0) on that old Ubuntu Hardy with Plesk hosted machine you have not much control over (you boss has it, hosts mail accounts on it, and its 4 CPUs are waisted, so you wish to use that machine)
