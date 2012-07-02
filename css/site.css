@@ -677,6 +677,7 @@ pre {
   padding-top: 20px;
   padding-bottom:20px;
   border-top: 1px solid grey;
+  border-bottom: 1px dashed rgba(245,245,255,1);
   font-family: 'Lobster', cursive;
   font-size: 2em;
   text-align: center;
@@ -695,8 +696,12 @@ pre {
 
 }
 
+  
+
 #post-content h2 {
   display: block;
+  margin-top:20px;
+  margin-bottom:5px;
   padding-top: 10px;
   padding-bottom:10px;
   border-top: 1px dashed grey;
@@ -705,6 +710,11 @@ pre {
   text-align: left;
 
 }
+
+#post-content h1 + h2 {
+  border-bottom: ;
+}
+
 
 #post-content h3 {
   display: block;
