@@ -672,6 +672,12 @@ pre {
  word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 
+
+#post-content  {
+  text-shadow:1px 1px 1px #CCCCCC;
+}
+
+
 #post-content h1 {
   display: block;
   padding-top: 20px;
@@ -681,6 +687,8 @@ pre {
   font-family: 'Lobster', cursive;
   font-size: 2em;
   text-align: center;
+
+  text-shadow:2px 2px 5px rgba(209,223,235,.6);
 
   background: rgb(237,248,255); /* Old browsers */
   /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -709,11 +717,15 @@ pre {
   font-size: 1.5em;
   text-align: left;
 
+  text-shadow:2px 2px 3px rgba(219,243,245,.6);
+
+
 }
 
+/*
 #post-content h1 + h2 {
   border-bottom: ;
-}
+}*/
 
 
 #post-content h3 {
@@ -725,8 +737,6 @@ pre {
   font-size: 1.2em;
   text-align: left;
 
-}
+  text-shadow:1px 1px 1px rgba(219,243,245,.6);
 
-#post-content  {
-  text-shadow:1px 1px 1px #CCCCCC;
 }
