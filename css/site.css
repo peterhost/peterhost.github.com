@@ -674,8 +674,8 @@ pre {
 
 #post-content h1 {
   display: block;
-  margin-top: 20px
-  margin-bottom:20px;
+  padding-top: 20px
+  padding-bottom:20px;
   border-top: 1px solid grey;
   font-family: 'Questrial', sans-serif;
   font-size: 2em;
@@ -685,11 +685,11 @@ pre {
 
 #post-content h2 {
   display: block;
-  margin-top: 10px
-  margin-bottom:10px;
+  padding-top: 10px
+  padding-bottom:10px;
   border-top: 1px dashed grey;
   font-family: 'Questrial', sans-serif;
   font-size: 1.5em;
-  text-align: center;
+  text-align: left;
 
 }
