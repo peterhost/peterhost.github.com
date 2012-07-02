@@ -726,3 +726,7 @@ pre {
   text-align: left;
 
 }
+
+#post-content p {
+  text-shadow:1px 1px 1px #CCCCCC;
+}
