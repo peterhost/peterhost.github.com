@@ -693,3 +693,14 @@ pre {
   text-align: left;
 
 }
+
+#post-content h3 {
+  display: block;
+  padding-top: 10px;
+  padding-bottom:5px;
+  /*border-top: 1px dashed grey;*/
+  font-family: 'Italiana', sans-serif;
+  font-size: 1.5em;
+  text-align: left;
+
+}
