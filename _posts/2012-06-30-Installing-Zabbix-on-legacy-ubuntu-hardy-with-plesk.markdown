@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: Installing Zabbix 2.0.1 on Legacy Ubuntu Hardy 8.0.4 (with Plesk)
@@ -10,11 +9,11 @@ intro-img: "2012-06-30-zabbix-ubuntu-hardy-plesk.jpg"
 ---
 
 
-#PURPOSE
+#Purpose
 
 * You need a recent Zabbix server (>=2.0) on that old Ubuntu Hardy with Plesk hosted machine you have not much control over (you boss has it, hosts mail accounts on it, and its 4 CPUs are waisted, so you wish to use that machine)
 
-#FOREWARNING
+#Forewarning
 
 1. Messing with a platform where PLESK is installed in `PRODUCTION` is **BAD**. You should do your tests on a Plesk install similar to your `PRODUCTION` environments (Ubuntu version, Plesk version)
 2. DO NOT EVER accept `aptitude install somepackage` where the resulting output of `aptitude` includes the modifying (remove/upgrade/...) of any package that belong to `PLESK`, ie :
@@ -30,7 +29,7 @@ intro-img: "2012-06-30-zabbix-ubuntu-hardy-plesk.jpg"
 
 **YOU HAVE BEEN WARNED !!**
 
-#PRE-REQUISITE
+#Before you start
 
 
 ## Getting things done
@@ -184,9 +183,9 @@ of for a `sometool`'s lib :
     $ aptitude search sometool | grep lib | grep dev
 
 
-##Installing Zabbix's BUILD Dependencies
+#Installing Zabbix's BUILD Dependencies
 
-###Mysql (--with-mysql)
+##Mysql (--with-mysql)
 
     $ aptitude -s install libmysql++2c2a libmysql++-dev libmysql++2c2a libmysqlclient15-dev 
 
@@ -194,14 +193,14 @@ of for a `sometool`'s lib :
 
     $  $ aptitude install libmysql++2c2a libmysql++-dev libmysql++2c2a libmysqlclient15-dev 
 
-###Jabber (--with-jabber)
+##Jabber (--with-jabber)
 
 
     $ aptitude install pkg-config
 
     $ aptitude install libiksemel3 libiksemel-dev
 
-###CURL (--with-libcurl)
+##CURL (--with-libcurl)
 
     $ aptitude install libcurl4-dev libcurl4-gnutls-dev libcurl4-openssl-dev 
 
@@ -226,7 +225,7 @@ OUtputs:
     5 packages upgraded, 7 newly installed, 0 to remove and 74 not upgraded.
 
 
-###SNMP (--with-net-snmp)
+##SNMP (--with-net-snmp)
 
     $ aptitude install libsnmp-dev
     The following NEW packages will be installed:
@@ -235,7 +234,7 @@ OUtputs:
 
     0 packages upgraded, 7 newly installed, 0 to remove and 74 not upgraded.
 
-###SSH2 (--with-ssh2)
+##SSH2 (--with-ssh2)
 > Plain :
 
     $ aptitude install libssh2-1 libssh2-1-dev
@@ -247,7 +246,7 @@ Won't do, Zabbix `configure` script will complain :
 
 So we'll make an exception to out `non intefering with the default OS policy` and add a `prebuilt` package from a `PPA`
 
-####Add this PPA to sources.list
+###Add this PPA to sources.list
 
 [PPA is here](https://launchpad.net/~pgquiles/+archive/ppa)
 
@@ -257,7 +256,7 @@ So we'll make an exception to out `non intefering with the default OS policy` an
     deb http://ppa.launchpad.net/pgquiles/ppa/ubuntu hardy main 
     deb-src http://ppa.launchpad.net/pgquiles/ppa/ubuntu hardy main 
 
-####Authorize the PPA
+###Authorize the PPA
 
     $ apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 42813EC6
     Executing: gpg --ignore-time-conflict --no-options --no-default-keyring --secret-keyring /etc/apt/secring.gpg --trustdb-name /etc/apt/trustdb.gpg --keyring /etc/apt/trusted.gpg --keyserver keyserver.ubuntu.com --recv-keys 42813EC6
@@ -266,7 +265,7 @@ So we'll make an exception to out `non intefering with the default OS policy` an
     gpg: Total number processed: 1
     gpg:               imported: 1  (RSA: 1)
 
-####Update Aptitude
+###Update Aptitude
 
     $ aptitude update
 
@@ -278,23 +277,23 @@ So we'll make an exception to out `non intefering with the default OS policy` an
     p purged           <none>     hardy    1.2-1~hard   libssh2-1-dbg                  none       debug    SSH2 client-side library (debug packa
     p purged           <none>     hardy    1.2-1~hard   libssh2-1-dev                  none       libdevel SSH2 client-side library (development
 
-####Install them
+###Install them
 
     $  aptitude install libssh2-1 libssh2-1-dev
 
-###Open IPMI (--with-openipmi)
+##Open IPMI (--with-openipmi)
 
     $ aptitude install libgdbm-dev libopenipmi-dev libopenipmi0
 
-###UNIXODBC (--with-unixodbc )
+##UnixODBC (--with-unixodbc )
 
     $ aptitude install autotools-dev libaudio2 libdrm2 libgl1-mesa-glx libglu1-mesa liblcms1 libltdl7 libltdl7-dev libmng1 libodbcinstq1c2 libqt3-mt libtool libxmu6 libxt6 libxxf86vm1 unixodbc-dev
 
     $ aptitude install iodbc 
 
-##BUILDING
+#BUILDING
 
-###Quit the ROOT user account
+##Quit the ROOT user account
 
 >This is fucking important.
 
@@ -307,7 +306,7 @@ Best Practice is to always :
     $ su root
     # make install
 
-###Download the source
+##Download the source
 
 Go into some directory your user owns
 
@@ -323,14 +322,14 @@ If you already played with the source DIR a little bit, issued some `make`comman
 
 >DON'T EVER do that if you already ran `make install` as  `make uninstall`'s infos will be erased too, and you'll have such a nice time figuring out what files to remove before your system is clean again.
 
-###Configure
+##Configure
 
     $ ./configure  --with-mysql --with-jabber --with-libcurl --with-iodbc   --enable-server --enable-agent\
      --enable-proxy --with-ldap --enable-ipv6 --with-net-snmp  --with-openipmi --with-ssh2
 
 Should yield a clean output with no errors. If not, re-read the previous instructions carefully, find the missing `dependancies` (usually of the form `libdevxxxx` where `xxx` is the missing `lib` as the configure script tells you when it exists with an error)
 
-###MAKE
+##MAKE
 
     $ make
 
@@ -365,10 +364,10 @@ It should en with something like :
     make[1]: Leaving directory `somepath/zabbix-2.0.1'
 
 
-##Now for the Packaging
+#Now for the Packaging
 
 
-###Build the packages
+##Build the packages
 
     $ sudo checkinstall -D --install=no
 
