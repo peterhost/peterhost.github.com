@@ -4,7 +4,7 @@ layout: post
 title: Installing Zabbix 2.0.1 on Legacy Ubuntu Hardy 8.0.4 (with Plesk) PART II
 categories: tutorials, plesk, ubuntu, zabbix
 tags: zabbix ubuntu-hardy plesk legacy tutorial
-intro: "We have built the latest version of Zabbix (2.0.1 as of this post) on a Legacy Ubuntu with Plesk <strong>on top of it all</strong>.<br /><br /><strong>Use Case:</strong> Now is the time to deploy your BUILD to the PRODUCTION server. It's fairly easy."
+intro: "We have built the latest version of Zabbix (2.0.1 as of this post) on a Legacy Ubuntu with Plesk <strong>on top of it all</strong>.<br /><br /><strong>Use Case:</strong> Now is the time to deploy your BUILD to the PRODUCTION server.<br/> It's mostly just a matter of following the usual `Zabbix` tutorials (like [this one](http://www.zabbix.com/wiki/howto/install/ubuntu/ubuntuinstall), create the user, group, setup some `sudoer`settings, setup an Apache `virtualhost`, and configuring Zabbix propper."
 intro-img: "2012-06-30-zabbix-ubuntu-hardy-plesk-VICTORY.jpg"
 
 ---
