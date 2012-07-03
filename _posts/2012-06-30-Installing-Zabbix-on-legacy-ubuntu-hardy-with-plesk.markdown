@@ -441,6 +441,10 @@ Congrats, you're done. You now have inside your build directory :
 
 1. a nice clean little package called `zabbix_2.0.1-1_amd64.deb` (if you're on 64bit)
 2. in the `frontends/php/` subfolder, the PHP frontend interface for `zabbix` : all you need to do is copy this someplace, make a virtualhost in apache,...)
+3. database schemas and tables can be found in `/sss/ddd`
+4. lastly, system services to launch Zabbix (server, hhhh, proxy) can be found in `fffff/fffff`
+
+you should pack all that in an archive that you can then save someplace and use for installation.
 
 Time to test it on your build server.
 
