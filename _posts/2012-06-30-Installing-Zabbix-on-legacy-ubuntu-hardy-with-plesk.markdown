@@ -442,7 +442,7 @@ It all should end with some happy message like :
 1. a nice clean little package called `zabbix_2.0.1-1_amd64.deb` (if you're on 64bit)
 2. in the `frontends/php/` subfolder, the PHP frontend interface for `zabbix` : all you need to do is copy this someplace, make a virtualhost in apache,...)
 3. database schemas and tables can be found in `database` subfolder, which looks like
-4. lastly, system services to launch Zabbix (server, agentd, proxy) can be found in the `misc/init.d` subfolder
+4. lastly, system services to launch Zabbix (server, agentd, proxy) can be found in the `misc/init.d/debian` subfolder (for Debian and Ubuntu)
 
 ###The `database`folder contains all templates required for setting up your backend
 
@@ -452,10 +452,12 @@ It all should end with some happy message like :
     |   |-- data.sql
     |   |-- images.sql
     |   `-- schema.sql
+    //////////////////////////////////////////
     |-- mysql
     |   |-- data.sql
     |   |-- images.sql
     |   `-- schema.sql
+    //////////////////////////////////////////
     |-- oracle
     |   |-- data.sql
     |   |-- images.sql
@@ -469,7 +471,7 @@ It all should end with some happy message like :
         |-- images.sql
         `-- schema.sql
 
-###and the MISC folder contains the startup scripts for different flavors of *NIX and windows
+###and the `MISC` folder contains the startup scripts for different flavors of *NIX and windows
 
     misc
     |-- Makefile
@@ -486,9 +488,11 @@ It all should end with some happy message like :
     |   |-- README
     |   |-- aix
     |   |   `-- zabbix_agentd
+    //////////////////////////////////////////
     |   |-- debian
     |   |   |-- zabbix-agent
     |   |   `-- zabbix-server
+    //////////////////////////////////////////
     |   |-- fedora
     |   |   |-- core
     |   |   |   |-- zabbix_agentd
