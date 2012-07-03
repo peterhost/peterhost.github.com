@@ -437,16 +437,98 @@ It all should end with some happy message like :
 
 #BANG !
 
-Congrats, you're done. You now have inside your build directory :
+##Congrats, you're done. You now have inside your build directory :
 
 1. a nice clean little package called `zabbix_2.0.1-1_amd64.deb` (if you're on 64bit)
 2. in the `frontends/php/` subfolder, the PHP frontend interface for `zabbix` : all you need to do is copy this someplace, make a virtualhost in apache,...)
-3. database schemas and tables can be found in `/sss/ddd`
-4. lastly, system services to launch Zabbix (server, hhhh, proxy) can be found in `fffff/fffff`
+3. database schemas and tables can be found in `database` subfolder, which looks like
+4. lastly, system services to launch Zabbix (server, agentd, proxy) can be found in the `misc/init.d` subfolder
 
-you should pack all that in an archive that you can then save someplace and use for installation.
+###The `database`folder contains all templates required for setting up your backend
 
-Time to test it on your build server.
+    database/
+    |-- ...
+    |-- ibm_db2
+    |   |-- data.sql
+    |   |-- images.sql
+    |   `-- schema.sql
+    |-- mysql
+    |   |-- data.sql
+    |   |-- images.sql
+    |   `-- schema.sql
+    |-- oracle
+    |   |-- data.sql
+    |   |-- images.sql
+    |   `-- schema.sql
+    |-- postgresql
+    |   |-- data.sql
+    |   |-- images.sql
+    |   `-- schema.sql
+    `-- sqlite3
+        |-- data.sql
+        |-- images.sql
+        `-- schema.sql
+
+###and the MISC folder contains the startup scripts for different flavors of *NIX and windows
+
+    misc
+    |-- Makefile
+    |-- Makefile.am
+    |-- Makefile.in
+    |-- images
+    |   |-- README
+    |   |-- png_classic
+    |   |   |-- ... a few png
+    |   |-- png_modern
+    |   |   |-- ... loads of png
+    |   `-- png_to_xml.sh
+    |-- init.d
+    |   |-- README
+    |   |-- aix
+    |   |   `-- zabbix_agentd
+    |   |-- debian
+    |   |   |-- zabbix-agent
+    |   |   `-- zabbix-server
+    |   |-- fedora
+    |   |   |-- core
+    |   |   |   |-- zabbix_agentd
+    |   |   |   `-- zabbix_server
+    |   |   `-- core5
+    |   |       |-- zabbix_agentd
+    |   |       `-- zabbix_server
+    |   |-- freebsd
+    |   |   |-- zabbix_agentd
+    |   |   `-- zabbix_server
+    |   |-- gentoo
+    |   |   |-- zabbix-agentd
+    |   |   `-- zabbix-server
+    |   |-- suse
+    |   |   |-- 9.1
+    |   |   |   |-- zabbix_agentd
+    |   |   |   `-- zabbix_server
+    |   |   |-- 9.2
+    |   |   |   |-- zabbix_agentd
+    |   |   |   `-- zabbix_server
+    |   |   `-- 9.3
+    |   |       |-- zabbix_agentd
+    |   |       `-- zabbix_server
+    |   |-- tru64
+    |   |   |-- zabbix_agentd
+    |   |   `-- zabbix_server
+    |   `-- ubuntu
+    |       |-- zabbix-agent.conf
+    |       `-- zabbix-server.conf
+    |-- snmptrap
+    |   |-- snmptrap.sh
+    |   `-- zabbix_trap_receiver.pl
+    `-- win32floppy
+        |-- README
+        |-- install.bat
+        `-- uninstall.bat 
+
+you should pack all that in an archive that you can then save someplace and use for later deployment.
+
+Time to test it on your build server (easy, all the build's dependancies are already installed).
 
 > Remember to keep a copy of `zabbix_2.0.1-1_amd64.deb` and the `frontends/php/` folder for deployment to your `PRODUCTION` server
 
@@ -737,3 +819,4 @@ The `configure` script offers the following options (as of zabbix 2.0.1)
     it to find libraries and programs with nonstandard names/locations.
 
     Report bugs to the package provider.
+
