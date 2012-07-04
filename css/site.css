@@ -682,7 +682,7 @@ pre {
   display: block;
   padding-top: 20px;
   padding-bottom:20px;
-  border-top: 1px solid grey;
+  border-top: 1px solid rgb(154,160,165);
   border-bottom: 1px dashed rgba(245,245,255,1);
   font-family: 'Lobster', cursive;
   font-size: 2em;
@@ -712,7 +712,7 @@ pre {
   margin-bottom:5px;
   padding-top: 10px;
   padding-bottom:10px;
-  border-top: 1px dashed grey;
+  border-top: 1px dashed rgb(164,174,172);
   font-family: 'Italiana', sans-serif;
   font-size: 1.5em;
   text-align: left;
@@ -772,15 +772,18 @@ pre {
 }
 
 code {
-    margin-top : 2px;
-    margin-bottom : 2px;
-    margin-left : 1px;
-    margin-right : 1px;
+    font: 0.9em/1.5 'andale mono','lucida console', monospace;
+    color: rgb(98,93,91);
+    background-color: rgba(247,252,255,.9);
+
+    margin-top : 1px;
+    margin-bottom : 1px;
+    margin-left : 2px;
+    margin-right : 2px;
     padding-left: 2px;
     padding-right: 2px;
     padding-top: 1px;
     padding-bottom: 1px;
-    background-color: rgba(230,230,230,.2);
   
     -webkit-border-radius: 5px;
     border-radius: 5px; 
