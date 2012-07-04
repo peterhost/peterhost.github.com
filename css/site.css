@@ -751,3 +751,52 @@ pre {
   text-shadow:1px 1px 1px rgba(219,243,245,.6);
 
 }
+
+
+pre {
+/*    background-color: #F7F7F7;
+    font: 0.9em/1.5 'andale mono','lucida console', monospace;
+    overflow: auto;
+    padding: 0.25em 0.5em 0.5em !important;
+    margin-top: 1em;
+    margin-bottom: 1em;*/
+    text-shadow: 0 -1px 1px #221E1C;
+    background-color: #272625;
+    width: 400px;
+    color: #EBEFE7;
+    background-repeat: repeat;
+    padding: 25px;
+    border: 1px dashed #E6EBE0;
+    line-height: 15px;
+    box-shadow: 0 0px 15px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0px 15px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0px 15px rgba(0, 0, 0, 0.5);
+    font-family: 'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', 'Monaco', Courier, monospace !important;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    -moz-border-top-right-radius: 0;
+    -moz-border-top-left-radius: 0;
+    -webkit-border-top-left-radius: 0;
+    -webkit-border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    -moz-border-bottom-left-radius: 0;
+    -moz-border-top-left-radius: 0;
+    -webkit-border-bottom-left-radius: 0;
+    -webkit-border-top-left-radius: 0;
+    
+    border-color: #9FC653;
+    
+    text-wrap: wrap;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+
+
+    
+}
