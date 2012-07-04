@@ -473,6 +473,16 @@ It all should end with some happy message like :
 
 ###and the `MISC` folder contains the startup scripts for different flavors of *NIX and windows
 
+>NOTE : that we're choosing the `debian` subdirectory, it's because back
+>in the days when Ubuntu was at version `Hardy`(yours), services were
+>installed the `debian`way. 
+>
+>Yhe ùbuntu`subfolder contains sample `service files` which work with
+>the new Ubuntu way of handling services, and is not available on
+>`Hardy`(especially since your Plesk relies on the old behavior)
+>
+> ➔ Use the `debian`services
+
     misc
     |-- Makefile
     |-- Makefile.am
@@ -488,9 +498,11 @@ It all should end with some happy message like :
     |   |-- README
     |   |-- aix
     |   |   `-- zabbix_agentd
+    //////////////////////////////////////////
     |   |-- debian
     |   |   |-- zabbix-agent
     |   |   `-- zabbix-server
+    //////////////////////////////////////////
     |   |-- fedora
     |   |   |-- core
     |   |   |   |-- zabbix_agentd
@@ -517,11 +529,9 @@ It all should end with some happy message like :
     |   |-- tru64
     |   |   |-- zabbix_agentd
     |   |   `-- zabbix_server
-    //////////////////////////////////////////
     |   `-- ubuntu
     |       |-- zabbix-agent.conf
     |       `-- zabbix-server.conf
-    //////////////////////////////////////////
     |-- snmptrap
     |   |-- snmptrap.sh
     |   `-- zabbix_trap_receiver.pl
