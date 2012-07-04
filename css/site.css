@@ -187,19 +187,19 @@ padding-right:25em;
   margin: 0 0 0 10px;
 }
 #nav li a {
-  background: #cccccc;
-  -moz-border-radius: 5px 1px 5px 5px;
-  -webkit-border-radius: 5px 1px 5px 5px;
-  color: #008BBF;
-  text-decoration: none;
-  padding: 5px 10px;
-  border: solid 1px #bbb;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#cccccc));
-  background: -moz-linear-gradient(top,  #ffffff,  #cccccc);
-  filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#cccccc');
-  font-weight: bold;
-  font-size: 13px;
-  letter-spacing: -1px;
+  /*background: #cccccc;*/
+  /*-moz-border-radius: 5px 1px 5px 5px;*/
+  /*-webkit-border-radius: 5px 1px 5px 5px;*/
+  /*color: #008BBF;*/
+  /*text-decoration: none;*/
+  /*padding: 5px 10px;*/
+  /*border: solid 1px #bbb;*/
+  /*background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#cccccc));*/
+  /*background: -moz-linear-gradient(top,  #ffffff,  #cccccc);*/
+  /*filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#cccccc');*/
+  /*font-weight: bold;*/
+  /*font-size: 13px;*/
+  /*letter-spacing: -1px;*/
 }
 #nav li a:hover {
   color: #008BBF;
