@@ -184,21 +184,24 @@ padding-right:25em;
   margin-bottom:0px;
   margin-left:50px;
   margin-right:50px;
-  padding: 3px;
-  padding-bottom: 0px;
   top:10px;
   bottom:10px;
 
-  -webkit-border-radius: 10px 5px 0px 0px;
-  border-radius: 10px 5px 0px 0px;
-  border: 1px dotted rgba(220,220,220,.5);
-  border-bottom: 0;
-  background-color: rgba(240,240,250,.5);
   
 }
 #nav li {
   float: left;
   margin: 0 0 0 10px;
+
+  margin: 3px;
+
+  padding: 3px;
+  padding-bottom: 0px;
+  -webkit-border-radius: 10px 5px 0px 0px;
+  border-radius: 10px 5px 0px 0px;
+  border: 1px dotted rgba(220,220,220,.5);
+  border-bottom: 0;
+  background-color: rgba(240,240,250,.5);
 }
 #nav li a {
   /*background: #cccccc;*/
