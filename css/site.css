@@ -769,9 +769,12 @@ pre {
     border-radius: 2px;
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px;
-    
+}
 
-
-
-    
+code {
+    -webkit-border-radius: 3px;
+    border-radius: 3px; 
+    -webkit-box-shadow: 1px 1px 2px 1px rgba(220, 220, 220, .5);
+    box-shadow: 1px 1px 2px 1px rgba(220, 220, 220, .5);
+    borger : dotted 1px rgb(200,200,200);
 }
