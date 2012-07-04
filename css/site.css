@@ -774,6 +774,7 @@ pre {
 code {
     font: 0.9em/1.5 'andale mono','lucida console', monospace;
     color: rgb(98,93,91);
+    background-color: rgba(247,252,255,.9);
 
     margin-top : 1px;
     margin-bottom : 1px;
@@ -783,7 +784,6 @@ code {
     padding-right: 2px;
     padding-top: 1px;
     padding-bottom: 1px;
-    background-color: rgba(255,240,236,.5);
   
     -webkit-border-radius: 5px;
     border-radius: 5px; 
