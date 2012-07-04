@@ -178,8 +178,8 @@ padding-right:25em;
 }
 #nav {
   list-style-type: none;
-  /*float: left;*/
-  /*position: relative;*/
+  float: right;
+  position: absolute;
   margin-top: 10px;
   margin-bottom:0px;
   margin-left:50px;
