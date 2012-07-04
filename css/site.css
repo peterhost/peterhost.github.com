@@ -760,13 +760,12 @@ pre {
     padding: 0.25em 0.5em 0.5em !important;
     margin-top: 1em;
     margin-bottom: 1em;*/
-    text-shadow: 0 -1px 1px #221E1C;
     padding: 25px;
     border: 1px dashed #E6EBE0;
     line-height: 15px;
-    box-shadow: 0 0px 15px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 0 0px 15px rgba(0, 0, 0, 0.5);
-    -webkit-box-shadow: 0 0px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0px 7px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0px 7px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0px 7px rgba(0, 0, 0, 0.5);
     font-family: 'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', 'Monaco', Courier, monospace !important;
     border-radius: 2px;
     -moz-border-radius: 2px;
