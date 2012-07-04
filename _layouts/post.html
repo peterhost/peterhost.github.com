@@ -13,7 +13,15 @@ layout: default
         <p style="float:right"><span property="dcterms:date" datatype="xsd:date" content="{{page.date}}">{{page.date|date_to_string}}</span></p>
       </div>
     </div>
-    
+  <ul id="nav">
+    <!--<li><a href="/pages/quotes.html">quotes</a></li>-->
+    <!--<li><a href="/pages/code.html">code</a></li>-->
+    {% if title != "Barking Code : it does (bite)." %}
+      {% include social_top.html %}
+    {% endif %}
+
+</ul>
+<br/>  
 
   <span id="post-details" style="float:right;font-size:1.2em;margin-right:29px">
   <p class="tags" >
