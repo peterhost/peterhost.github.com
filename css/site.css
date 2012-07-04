@@ -754,19 +754,18 @@ pre {
 
 
 pre {
-/*    background-color: #F7F7F7;
+    background-color: #F7F7F7;
     font: 0.9em/1.5 'andale mono','lucida console', monospace;
     overflow: auto;
-    padding: 0.25em 0.5em 0.5em !important;
     margin-top: 1em;
-    margin-bottom: 1em;*/
-    padding: 25px;
+    margin-bottom: 1em;
+    padding: 0.25em 0.5em 0.5em !important;
+    
     border: 1px dashed #E6EBE0;
     line-height: 15px;
-    box-shadow: 0 0px 7px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0 0px 7px rgba(0, 0, 0, 0.2);
-    -webkit-box-shadow: 0 0px 7px rgba(0, 0, 0, 0.2);
-    font-family: 'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', 'Monaco', Courier, monospace !important;
+    box-shadow: 0 0px 4px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0px 4px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 0px 4px rgba(0, 0, 0, 0.1);
     border-radius: 2px;
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px;
