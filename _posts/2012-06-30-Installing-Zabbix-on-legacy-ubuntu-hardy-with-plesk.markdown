@@ -488,11 +488,9 @@ It all should end with some happy message like :
     |   |-- README
     |   |-- aix
     |   |   `-- zabbix_agentd
-    //////////////////////////////////////////
     |   |-- debian
     |   |   |-- zabbix-agent
     |   |   `-- zabbix-server
-    //////////////////////////////////////////
     |   |-- fedora
     |   |   |-- core
     |   |   |   |-- zabbix_agentd
@@ -519,9 +517,11 @@ It all should end with some happy message like :
     |   |-- tru64
     |   |   |-- zabbix_agentd
     |   |   `-- zabbix_server
+    //////////////////////////////////////////
     |   `-- ubuntu
     |       |-- zabbix-agent.conf
     |       `-- zabbix-server.conf
+    //////////////////////////////////////////
     |-- snmptrap
     |   |-- snmptrap.sh
     |   `-- zabbix_trap_receiver.pl
