@@ -65,7 +65,9 @@ type="text/css" media="screen, projection">
   <ul id="nav">
     <!--<li><a href="/pages/quotes.html">quotes</a></li>-->
     <!--<li><a href="/pages/code.html">code</a></li>-->
-    {% include social_top.html %}
+    {% if page == paginator.post %}
+      {% include social_top.html %}
+    {% endif %}
 
   </ul>
 </div>
