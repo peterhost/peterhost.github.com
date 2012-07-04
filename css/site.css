@@ -205,8 +205,8 @@ padding-right:25em;
   -webkit-border-radius: 10px 5px 0px 0px;
   border-radius: 10px 5px 0px 0px;
 
-  -webkit-box-shadow:  -1px -2px 5px 1px rgba(150, 150, 150, .3);
-  box-shadow:  -1px -2px 5px 1px rgba(150, 150, 150, .3);
+  -webkit-box-shadow:  0px 0px 3px 1px rgba(150, 150, 150, .2);
+  box-shadow:  0px 0px 3px 1px rgba(150, 150, 150, .2);
 
 
 }
