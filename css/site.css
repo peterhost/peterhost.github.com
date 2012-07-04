@@ -688,7 +688,10 @@ pre {
   font-size: 2em;
   text-align: center;
 
-  text-shadow:2px 2px 5px rgba(255,255,255,.6);
+  text-shadow:-1px -1px 2px #757575, 1px 1px 2px #292929
+  color: white;
+
+  /*text-shadow:2px 2px 5px rgba(255,255,255,.6);*/
 
   background: rgb(237,248,255); /* Old browsers */
   /* IE9 SVG, needs conditional override of 'filter' to 'none' */
