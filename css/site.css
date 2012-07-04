@@ -199,8 +199,12 @@ padding-right:25em;
   padding-bottom: 0px;
   -webkit-border-radius: 10px 5px 0px 0px;
   border-radius: 10px 5px 0px 0px;
-  border: 1px dotted rgba(220,220,220,.5);
-  background-color: rgba(240,240,250,.5);
+  border: 1px dotted rgba(220,220,220,.8);
+  background-color: rgba(220,220,250,.8);
+
+  -webkit-border-radius: 10px 5px 0px 0px;
+  border-radius: 10px 5px 0px 0px;
+
 }
 #nav li a {
   /*background: #cccccc;*/
