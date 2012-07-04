@@ -780,14 +780,14 @@ code {
     padding-right: 2px;
     padding-top: 1px;
     padding-bottom: 1px;
-    background-color: rgba(230,230,240,.2);
+    background-color: rgba(230,230,230,.2);
   
     -webkit-border-radius: 5px;
     border-radius: 5px; 
-    -webkit-box-shadow: 1px 1px 2px 1px rgba(220, 220, 220, .3);
-    box-shadow: 1px 1px 2px 1px rgba(220, 220, 220, .3);
+    -webkit-box-shadow: 1px 1px 2px 1px rgba(230, 230, 230, .3);
+    box-shadow: 1px 1px 2px 1px rgba(230, 230, 230, .3);
     
-    border : dotted 1px rgb(200,240,200);
+    border : dotted 1px rgb(200,200,210);
 }
 
 pre code {
