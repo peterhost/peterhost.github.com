@@ -772,9 +772,13 @@ pre {
 }
 
 code {
+    padding: 2px;
+    backgroung-corol: rgba(200,230,200,.3);
+  
     -webkit-border-radius: 3px;
     border-radius: 3px; 
     -webkit-box-shadow: 1px 1px 2px 1px rgba(220, 220, 220, .5);
     box-shadow: 1px 1px 2px 1px rgba(220, 220, 220, .5);
-    borger : dotted 1px rgb(200,200,200);
+    
+    border : dotted 1px rgb(200,240,200);
 }
