@@ -187,9 +187,11 @@ padding-right:25em;
   top:10px;
   bottom:10px;
 
-  
+
 }
 #nav li {
+
+  width:110px;
   float: left;
   margin: 0 0 0 10px;
 
