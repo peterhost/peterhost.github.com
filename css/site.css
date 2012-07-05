@@ -785,6 +785,8 @@ pre {
 .post .content-page h3, .post .content h3 {
   font-size: 2em;
 }
+
+
 pre {
     background-color: #F7F7F7;
     font: 0.9em/1.5 'andale mono','lucida console', monospace;
@@ -813,10 +815,12 @@ code {
     margin-bottom : 1px;
     margin-left : 2px;
     margin-right : 2px;
-    padding-left: 2px;
-    padding-right: 2px;
-    padding-top: 1px;
-    padding-bottom: 1px;
+    /*
+     *padding-left: 2px;
+     *padding-right: 2px;
+     *padding-top: 1px;
+     *padding-bottom: 1px;
+     */
   
     -webkit-border-radius: 5px;
     border-radius: 5px; 
