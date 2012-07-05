@@ -395,6 +395,7 @@ margin-top:0;
 }
 #footer {
   padding: 0;
+  background-color: rgba(42,37,34,.5);
 }
 
 #footer .description {
