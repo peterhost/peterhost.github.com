@@ -382,7 +382,7 @@ margin-top:2em;
 padding: 15px 15px 15px 0;
 }
 
-.post .content-page h3 {
+.post .content-page h3, .post .content h3 {
   font-size: 2em;
 }
 
