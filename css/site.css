@@ -288,7 +288,8 @@ margin-bottom: 60px;
     font-weight: bold;
 }
 
-pre, code, tt {
+/*pre, code, tt {*/
+pre,  tt {
     background-color: #F7F7F7;
 /*    border: 1px solid #DEDEDE;*/
     font: 0.9em/1.5 'andale mono','lucida console', monospace;
