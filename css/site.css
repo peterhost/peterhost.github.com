@@ -396,6 +396,8 @@ margin-top:0;
 #footer {
   padding: 0;
   background-color: rgba(42,37,34,.5);
+  font-color: rgba(230,230,230,1)
+  width: 100%
 }
 
 #footer .description {
