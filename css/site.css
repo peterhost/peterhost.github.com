@@ -203,6 +203,7 @@ padding-right:25em;
   -webkit-border-radius: 0px 0px 5px 10px;
   border-radius: 0px 0px 5px 10px;
   border: 1px dotted rgba(120,120,120,.9);
+  border-top: 1px solid rgba(120,120,120,.9);
   /*background-color: rgba(240,240,250,.6);*/
   /*background-color: rgba(159,159,159,.4);*/
     background-color: rgba(247,252,255,.9);
