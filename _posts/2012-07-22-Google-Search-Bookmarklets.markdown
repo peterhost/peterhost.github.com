@@ -46,7 +46,6 @@ If, like I was you're in a hurry, just drag the following links (yeah,
 the little blueish boxes) to your
 bookmark bar
 
-Show me Google's results for current search in the past :
 
 
 <a class='bookmarklet' href='javascript:(function(){function%20getQueryString(){var%20a={},b=location.search.substring(1),c=/([^%26=]+)=([^%26]*)/g,d;while(d=c.exec(b)){a[decodeURIComponent(d[1])]=decodeURIComponent(d[2])}return%20a}p=getQueryString()[%22q%22];if(p){document.location.href=%22http://www.google.com/search%3Fas_qdr=y1%26q=%22+escape(p)}})();'>Past Year</a>
@@ -66,7 +65,7 @@ Then head on to `google.com`, do some reseach, and hit the bookmarklets
 to see the `search results` adapt.
 
 And as a bonus (see below, it's so simple to implement you could even
-die from its simplicity) :
+die) :
 <br/>
 <a class='bookmarklet' href='javascript:(function(){function%20getQueryString(){var%20a={},b=location.search.substring(1),c=/([^%26=]+)=([^%26]*)/g,d;while(d=c.exec(b)){a[decodeURIComponent(d[1])]=decodeURIComponent(d[2])}return%20a}p=getQueryString()[%22q%22];if(p){document.location.href=%22http://www.google.com/search%3Fas_qdr=y1%26as_filetype=pdf%26q=%22+escape(p)}})();'>PDF, 1 year max</a>
 <br/><br/><br/><br/><br/>
