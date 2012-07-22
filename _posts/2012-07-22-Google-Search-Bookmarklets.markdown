@@ -165,3 +165,11 @@ google search provided you know the `query string`'s parameter's name.
 
 
 ![A true nerdy-geek's bookmark bar has to look something like this](img/covers/2007-07-22-bookmarkbar.png)
+
+As a matter of fact, when I said earlier that the bookmarklet from
+ [CSS Ninja](http://www.thecssninja.com/javascript/iphone-bookmarklet)
+ was the **ruler** of all living bookmarklet, I was being unfair. The
+ first bookmarklet in *any of my bookmarks bar*, the one with the
+ enclosed letter "Q" is **The One Ring** : [It's called QUIX](http://www.quixapp.com/), you
+ should definitely go and get it, *my preciousss*.
+
