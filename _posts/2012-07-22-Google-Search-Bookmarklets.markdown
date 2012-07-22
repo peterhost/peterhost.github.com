@@ -40,4 +40,35 @@ Show me Google's results for current search in the past :
 1 year : <a class='bookmarklet' href='javascript:(function(){function%20getQueryString(){var%20a={},b=location.search.substring(1),c=/([^%26=]+)=([^%26]*)/g,d;while(d=c.exec(b)){a[decodeURIComponent(d[1])]=decodeURIComponent(d[2])}return%20a}p=getQueryString()[%22q%22];if(p){document.location.href=%22http://www.google.com/search%3Fas_qdr=y1%26q=%22+escape(p)}})();'>Past Year</a>
 
 
-3 months : <a class='bookmarklet' href='javascript:(function(){function%20getQueryString(){var%20a={},b=location.search.substring(1),c=/([^%26=]+)=([^%26]*)/g,d;while(d=c.exec(b)){a[decodeURIComponent(d[1])]=decodeURIComponent(d[2])}return%20a}p=getQueryString()[%22q%22];if(p){document.location.href=%22http://www.google.com/search%3Fas_qdr=m3%26q=%22+escape(p)}})();'>Past 3 Months</a>
+3 months : <a class='bookmarklet' href='javascript:(function(){function%20getQueryString(){var%20a={},b=location.search.substring(1),c=/([^%26=]+)=([^%26]*)/g,d;while(d=c.exec(b)){a[decodeURIComponent(d[1])]=decodeURIComponent(d[2])}return%20a}p=getQueryString()[%22q%22];if(p){document.location.href=%22http://www.google.com/search%3Fas_qdr=m6%26q=%22+escape(p)}})();'>Past 6 Months</a>
+
+# The Code
+
+## unminified
+
+    function getQueryString() {
+      var result = {}, queryString = location.search.substring(1),
+      re = /([^&=]+)=([^&]*)/g, m;
+
+      while (m = re.exec(queryString)) {
+        result[decodeURIComponent(m[1])] = decodeURIComponent(m[2]);
+      }
+
+      return result;
+    }
+
+    p=getQueryString()["q"]
+    if(p){
+      document.location.href='http://www.google.com/search?as_qdr=y1&q='+escape(p)
+    }
+
+the key points here are :
+
+1. `the getQueryString()` function (thanks to [CMS on stackoverflow](http://stackoverflow.com/a/647272/474526)) which plainly extracts parameters to the `query string` (if any) of the page you're currently on. In our case, `google.com`.
+2. the modification of `document.location.href` : the parameter to
+re-inject is : `_qdr=xxx` where `xxx` can be :
+    * `y1` : one year
+    * `m1` : one month
+    * `d7` : 7 days
+    * `h2` : 2 hours
+    * and so on...
