@@ -55,7 +55,8 @@ bookmarklet links within a page **mobile** bookmark-able.
 
 # The Google Search Bookmarklets :
 
-If, like I was you're in a hurry, just drag the following links to your
+If, like I was you're in a hurry, just drag the following links (yeah,
+the little blueish boxes) to your
 bookmark bar
 
 Show me Google's results for current search in the past :
