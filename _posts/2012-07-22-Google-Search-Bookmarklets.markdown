@@ -105,7 +105,7 @@ to see the `search results` adapt.
       document.location.href='http://www.google.com/search?as_qdr=y1&q='+escape(p)
     }
 
-the key points here are :
+## the key points here are :
 
 1. `the getQueryString()` function (thanks to [CMS on stackoverflow](http://stackoverflow.com/a/647272/474526)) which plainly extracts parameters to the `query string` (if any) of the page you're currently on. In our case, `google.com`.
 2. the modification of `document.location.href` : the parameter to
@@ -115,6 +115,18 @@ re-inject is : `_qdr=xxx` where `xxx` can be :
     * `d7` : 7 days
     * `h2` : 2 hours
     * and so on...
+
+###Minified
+
+    function getQueryString(){var a={},b=location.search.substring(1),c=/([^&=]+)=([^&]*)/g,d;while(d=c.exec(b)){a[decodeURIComponent(d[1])]=decodeURIComponent(d[2])}return a}p=getQueryString()["q"];if(p){document.location.href="http://www.google.com/search?as_qdr=y1&q="+escape(p)}
+
+###Bookmarkletified
+
+    javascript:(function(){function%20getQueryString(){var%20a={},b=location.search.substring(1),c=/([^%26=]+)=([^%26]*)/g,d;while(d=c.exec(b)){a[decodeURIComponent(d[1])]=decodeURIComponent(d[2])}return%20a}p=getQueryString()[%22q%22];if(p){document.location.href=%22http://www.google.com/search%3Fas_qdr=y1%26q=%22+escape(p)}})();
+
+That's all there is to it.
+
+## Do whaterver you like !
 
 As you can see, you can configure your bookmarklet to do som advanced
 google search provided you know the `query string`'s parameter's name.
@@ -148,13 +160,8 @@ google search provided you know the `query string`'s parameter's name.
 <a class='bookmarklet' href='javascript:(function(){function%20getQueryString(){var%20a={},b=location.search.substring(1),c=/([^%26=]+)=([^%26]*)/g,d;while(d=c.exec(b)){a[decodeURIComponent(d[1])]=decodeURIComponent(d[2])}return%20a}p=getQueryString()[%22q%22];if(p){document.location.href=%22http://www.google.com/search%3Fas_qdr=y1%26as_filetype=pdf%26q=%22+escape(p)}})();'>PDF, 1 year max</a>
 <br/><br/><br/><br/><br/>
 
+## Are you a true Bookmarklet NERS ?
 
-##Minified
 
-    function getQueryString(){var a={},b=location.search.substring(1),c=/([^&=]+)=([^&]*)/g,d;while(d=c.exec(b)){a[decodeURIComponent(d[1])]=decodeURIComponent(d[2])}return a}p=getQueryString()["q"];if(p){document.location.href="http://www.google.com/search?as_qdr=y1&q="+escape(p)}
 
-##Bookmarkletified
-
-    javascript:(function(){function%20getQueryString(){var%20a={},b=location.search.substring(1),c=/([^%26=]+)=([^%26]*)/g,d;while(d=c.exec(b)){a[decodeURIComponent(d[1])]=decodeURIComponent(d[2])}return%20a}p=getQueryString()[%22q%22];if(p){document.location.href=%22http://www.google.com/search%3Fas_qdr=y1%26q=%22+escape(p)}})();
-
-That's all there is to it.
+![A true nerdy-geek's bookmark bar has to look something like this](img/covers/2007-07-22-bookmarkbar.png)
