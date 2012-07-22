@@ -843,9 +843,10 @@ div.bookmarkletcontainer{
   width: 100%
 }
 a.bookmarklet {
-  display:block
+  width: 100px;
+  display: block;
   float: left;
-  padding: 4px;
+  padding: 8px;
   margin: 3px;
   margin-left: 10px;
   margin-bottom: 10px;
