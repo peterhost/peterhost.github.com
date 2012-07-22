@@ -72,3 +72,13 @@ re-inject is : `_qdr=xxx` where `xxx` can be :
     * `d7` : 7 days
     * `h2` : 2 hours
     * and so on...
+
+##Minified
+
+    function getQueryString(){var a={},b=location.search.substring(1),c=/([^&=]+)=([^&]*)/g,d;while(d=c.exec(b)){a[decodeURIComponent(d[1])]=decodeURIComponent(d[2])}return a}p=getQueryString()["q"];if(p){document.location.href="http://www.google.com/search?as_qdr=y1&q="+escape(p)}
+
+##Bookmarkletified
+
+    javascript:(function(){function%20getQueryString(){var%20a={},b=location.search.substring(1),c=/([^%26=]+)=([^%26]*)/g,d;while(d=c.exec(b)){a[decodeURIComponent(d[1])]=decodeURIComponent(d[2])}return%20a}p=getQueryString()[%22q%22];if(p){document.location.href=%22http://www.google.com/search%3Fas_qdr=y1%26q=%22+escape(p)}})();
+
+That's all there is to it.
