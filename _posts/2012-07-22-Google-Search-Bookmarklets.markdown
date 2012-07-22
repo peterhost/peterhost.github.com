@@ -43,7 +43,8 @@ call with `javascript:` prefix to a dummy bookmark, and you're done
 
 I feel your pain. Adding bookmarklets in mobile safari is as fun as
 giving Hercules a hand cleaning Augeas' stables. So there is one mobile
-bookmarklet to rule them all, the first one to get in your bookmarks,
+bookmarklet to rule them all bloody *post-PC-era devices* as the late
+Steve used to call them, the first one to get in your bookmarks,
 and that's [the one from CSS Ninja](http://www.thecssninja.com/javascript/iphone-bookmarklet).
 
 On a mobile phone/tablet, only thing you can do with a bookmarklet is
