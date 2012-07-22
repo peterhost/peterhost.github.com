@@ -55,7 +55,7 @@ bookmarklet links within a page **mobile** bookmark-able.
 
 <br/><br/><br/>
 
-Just tap/touch/lick the above bookmarklet inside your bookmark bar, then
+Just tap/touch/lick the above bookmarklet once saved inside your bookmark bar, then
 do the same (touch/...) with the bookmarklet's link you'd like to save
 to you post-PC-era small factor smartphone, on the website's page, and
 the URL for the page you're on changes and appends the touched/...
