@@ -170,6 +170,9 @@ As a matter of fact, when I said earlier that the bookmarklet from
  [CSS Ninja](http://www.thecssninja.com/javascript/iphone-bookmarklet)
  was the **ruler** of all living bookmarklet, I was being unfair. The
  first bookmarklet in *any of my bookmarks bar*, the one with the
- enclosed letter "Q" is **The One Ring** : [It's called QUIX](http://www.quixapp.com/), you
- should definitely go and get it, *my preciousss*.
+ enclosed letter "Q" in the above screenshot, **The One Ring of bookmarklet** [is called QUIX](http://www.quixapp.com/).
+ 
+ Once you've seen the potential of bookmarklets and begin to dig the
+ stuff, you'll never regret the 5 minutes you spent watching Quix's
+ introductory screencast, *my preciousss*.
 
