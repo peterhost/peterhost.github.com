@@ -1,7 +1,6 @@
-
 ---
 layout: post
-title: Custom Google Search Bookmarklets : past year, past month, custom range
+title: Custom Google Search Bookmarklets - past year, past month, custom range
 categories: bookmarklet
 tags: bookmarklet, google, search
 intro: "Google search is great, but the defaults are not. If like myself you happen to google every two minutes for some answer to a Tech problem, you most certainly happen to spend like 10 friggin seconds huntig down for the `show search tools` ➔ `past year` option.<br /><br /><strong>Use Case:</strong> use bookmarklets to fix that ! Don't let google candy drive you nuts, dont let google tell you that '1 month' is a better time-based search option than '3 months' !!<link href='http://toonrefugee.com/toonblog/google-cartoons/google-is-evil'>Logo by James Cook from ToonRefugee</link>"
