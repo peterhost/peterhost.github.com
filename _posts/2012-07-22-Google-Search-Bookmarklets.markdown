@@ -39,28 +39,6 @@ your editor : [http://urldecode.org/](http://urldecode.org/) it already
 6. Copy/paste the resulting URI-encoded javascript anonymous function
 call with `javascript:` prefix to a dummy bookmark, and you're done
 
-# I'm on a mobile platform !
-
-I feel your pain. Adding bookmarklets in mobile safari is as fun as
-giving Hercules a hand cleaning Augeas' stables. So there is one mobile
-bookmarklet to rule them all bloody *post-PC-era devices* as the late
-Steve used to call them, the first one to get in your bookmarks,
-and that's [the one from CSS Ninja](http://www.thecssninja.com/javascript/iphone-bookmarklet).
-
-On a mobile phone/tablet, only thing you can do with a bookmarklet is
-"touch" it and let it execute. This special bookmarklet renders all
-bookmarklet links within a page **mobile** bookmark-able.
-
-<a class='bookmarklet' href='javascript:(function(){var%20i=document.links.length;while(i--){if(/^javascript:/.test(document.links[i].href)){var%20linkStyle=document.links[i].style;document.links[i].href='#removeme_'+document.links[i].href;linkStyle.backgroundColor='#1E528C';linkStyle.color='#fff';linkStyle.fontWeight='bold';}}})();'>Mobile Bookmarklet Maker</a>
-
-<br/><br/><br/>
-
-Just tap/touch/lick the above bookmarklet once saved inside your bookmark bar, then
-do the same (touch/...) with the bookmarklet's link you'd like to save
-to you post-PC-era small factor smartphone, on the website's page, and
-the URL for the page you're on changes and appends the touched/...
-bookmarklet code to itself. Bookmark the page, remove the `http://`part
-and you're done.
 
 # The Google Search Bookmarklets :
 
@@ -94,6 +72,30 @@ Then head on to `google.com`, do some reseach, and hit the bookmarklets
 to see the `search results` adapt.
 
 <br/><br/><br/>
+
+
+# I'm on a mobile platform !
+
+I feel your pain. Adding bookmarklets in mobile safari is as fun as
+giving Hercules a hand cleaning Augeas' stables. So there is one mobile
+bookmarklet to rule them all bloody *post-PC-era devices* as the late
+Steve used to call them, the first one to get in your bookmarks,
+and that's [the one from CSS Ninja](http://www.thecssninja.com/javascript/iphone-bookmarklet).
+
+On a mobile phone/tablet, only thing you can do with a bookmarklet is
+"touch" it and let it execute. This special bookmarklet renders all
+bookmarklet links within a page **mobile** bookmark-able.
+
+<a class='bookmarklet' href='javascript:(function(){var%20i=document.links.length;while(i--){if(/^javascript:/.test(document.links[i].href)){var%20linkStyle=document.links[i].style;document.links[i].href='#removeme_'+document.links[i].href;linkStyle.backgroundColor='#1E528C';linkStyle.color='#fff';linkStyle.fontWeight='bold';}}})();'>Mobile Bookmarklet Maker</a>
+
+<br/><br/><br/>
+
+Just tap/touch/lick the above bookmarklet once saved inside your bookmark bar, then
+do the same (touch/...) with the bookmarklet's link you'd like to save
+to you post-PC-era small factor smartphone, on the website's page, and
+the URL for the page you're on changes and appends the touched/...
+bookmarklet code to itself. Bookmark the page, remove the `http://`part
+and you're done.
 
 # The Code
 
