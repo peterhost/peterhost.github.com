@@ -51,8 +51,9 @@ bookmarklet links within a page **mobile** bookmark-able.
 
 <a class='bookmarklet' href='javascript:(function(){var%20i=document.links.length;while(i--){if(/^javascript:/.test(document.links[i].href)){var%20linkStyle=document.links[i].style;document.links[i].href='#removeme_'+document.links[i].href;linkStyle.backgroundColor='#1E528C';linkStyle.color='#fff';linkStyle.fontWeight='bold';}}})();'>Mobile Bookmarklet Maker</a>
 
+<br/><br/><br/>
 
-# The Bookmarklets :
+# The Google Search Bookmarklets :
 
 If, like I was you're in a hurry, just drag the following links to your
 bookmark bar
@@ -109,6 +110,39 @@ re-inject is : `_qdr=xxx` where `xxx` can be :
     * `d7` : 7 days
     * `h2` : 2 hours
     * and so on...
+
+As you can see, you can configure your bookmarklet to do som advanced
+google search provided you know the `query string`'s parameter's name.
+
+>Example : only display pdfs, less thant 1 year old.
+>
+>Google's query string parameter for that is : `as_filetype=pdf`
+>
+>Code would be :
+
+
+    function getQueryString() {
+      var result = {}, queryString = location.search.substring(1),
+      re = /([^&=]+)=([^&]*)/g, m;
+
+      while (m = re.exec(queryString)) {
+        result[decodeURIComponent(m[1])] = decodeURIComponent(m[2]);
+      }
+
+      return result;
+    }
+
+    p=getQueryString()["q"]
+    p=getQueryString()["q"]
+    if(p){
+      document.location.href='http://www.google.com/search?as_qdr=y1&as_filetype=pdf&q='+escape(p)
+    }
+
+
+
+<a class='bookmarklet' href='javascript:(function(){function%20getQueryString(){var%20a={},b=location.search.substring(1),c=/([^%26=]+)=([^%26]*)/g,d;while(d=c.exec(b)){a[decodeURIComponent(d[1])]=decodeURIComponent(d[2])}return%20a}p=getQueryString()[%22q%22];if(p){document.location.href=%22http://www.google.com/search%3Fas_qdr=y1%26as_filetype=pdf%26q=%22+escape(p)}})();'>PDF, 1 year max</a>
+<br/><br/><br/><br/><br/>
+
 
 ##Minified
 
