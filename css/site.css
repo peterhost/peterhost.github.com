@@ -849,7 +849,8 @@ a.bookmarklet {
   margin: 3px;
   margin-left: 10px;
 
-  color: rgba(220,220,220,1);
+  /*color: rgba(220,220,220,1);*/
+  color:white;
 
   text-decoration: none;
   text-shadow: -1px -1px 1px #1f1f1f;
