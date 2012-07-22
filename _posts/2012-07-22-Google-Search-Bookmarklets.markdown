@@ -13,18 +13,19 @@ intro-img: "2012-07-22-Google-Search-Bookmarklets.jpg"
 
 Today eventually, i got pissed.
 
-Pissed enough about having to hunt down for
-google's `show search tools` ➔ `past year` options *every single frigging time* 
-I need to filter that particular set of posts which have been
-closed for a decade and still show up at the first position when I search for, say,
-`Ubuntu openvpn bridged`...
+Pissed enough about having to hunt down for google's `show search tools`
+➔ `past year` options *every single frigging time* I need to filter that
+particular set of posts which have been closed for a decade and still
+show up at the first position when I search for, say, `Ubuntu openvpn
+bridged`...
 
-Pissed enough about my procrastination, that I decided it was high time I wrote me somme bookmarklets.
+Pissed enough about my procrastination, that I decided it was high time
+I wrote me somme bookmarklets.
 
 I guess you know what bookmarklets are (basically, a local anonymous
-javascript function launched by clicking/touching/licking a bookmark wich
-sratrs with `javascript:` and which executes itself in the current
-environment of the loaded page/DOM).
+javascript function launched by clicking/touching/licking a bookmark
+wich URL, or here rather URI begins with `javascript:` and which
+executes itself in the current environment of the loaded page/DOM).
 
 Here are some tools you can use to ease the process :
 
