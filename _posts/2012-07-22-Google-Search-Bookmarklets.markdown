@@ -8,17 +8,25 @@ intro-img: "2012-07-22-Google-Search-Bookmarklets.jpg"
 
 ---
 
+
 # Bookmarkleting tools
 
-When I eventually got pissed enough about having to hunt down for the `show search tools` ➔ `past year` options each time I wish to refine a google search
-so as **not to include** that old question on linuxforums which has been
-closed for a decade and still show up in first position regarding my
-very urgent, recent concern with solving a config issue on a cutting
-edge version of a software i'm setting up,...
+Today eventually, i got pissed.
 
-I dediced i'd make my own bookmarklets.
+Pissed enough about having to hunt down for
+google's `show search tools` ➔ `past year` options *every single frigging time* 
+I need to filter that particular set of posts which have been
+closed for a decade and still show up at the first position when I search for, say,
+`Ubuntu 12.04 openvpn bridged`...
 
-There are 3 tools you can use which will ease the making :
+Pissed enough about my procrastination, that I decided it was high time I wrote me somme bookmarklets.
+
+I guess you know what bookmarklets are (basically, a local anonymous
+javascript function launched by clicking/touching/licking a bookmark wich
+sratrs with `javascript:` and which executes itself in the current
+environment of the loaded page/DOM).
+
+Here are some tools you can use to ease the process :
 
 1. you've grabbed a bookmarklet and wish to edit the URI-encoded code in
 your editor : [http://urldecode.org/](http://urldecode.org/) it already
@@ -29,6 +37,20 @@ your editor : [http://urldecode.org/](http://urldecode.org/) it already
 5. Bookmarklet it : [http://chris.zarate.org/bookmarkleter](http://chris.zarate.org/bookmarkleter)
 6. Copy/paste the resulting URI-encoded javascript anonymous function
 call with `javascript:` prefix to a dummy bookmark, and you're done
+
+# I'm on a mobile platform !
+
+I feel your pain. Adding bookmarklets in mobile safari is as fun as
+giving Hercules a hand cleaning Augeas' stables. So there is one mobile
+bookmarklet to rule them all, the first one to get in your bookmarks,
+and that's [the one from CSS Ninja](http://www.thecssninja.com/javascript/iphone-bookmarklet).
+
+On a mobile phone/tablet, only thing you can do with a bookmarklet is
+"touch" it and let it execute. This special bookmarklet renders all
+bookmarklet links within a page **mobile** bookmark-able.
+
+<a class='bookmarklet' href='javascript:(function(){var%20i=document.links.length;while(i--){if(/^javascript:/.test(document.links[i].href)){var%20linkStyle=document.links[i].style;document.links[i].href='#removeme_'+document.links[i].href;linkStyle.backgroundColor='#1E528C';linkStyle.color='#fff';linkStyle.fontWeight='bold';}}})();'>Mobile Bookmarklet Maker</a>
+
 
 # The Bookmarklets :
 
