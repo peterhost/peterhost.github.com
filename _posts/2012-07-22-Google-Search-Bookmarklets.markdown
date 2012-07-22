@@ -160,7 +160,7 @@ google search provided you know the `query string`'s parameter's name.
 <a class='bookmarklet' href='javascript:(function(){function%20getQueryString(){var%20a={},b=location.search.substring(1),c=/([^%26=]+)=([^%26]*)/g,d;while(d=c.exec(b)){a[decodeURIComponent(d[1])]=decodeURIComponent(d[2])}return%20a}p=getQueryString()[%22q%22];if(p){document.location.href=%22http://www.google.com/search%3Fas_qdr=y1%26as_filetype=pdf%26q=%22+escape(p)}})();'>PDF, 1 year max</a>
 <br/><br/><br/><br/><br/>
 
-## Are you a true Bookmarklet NERS ?
+# Are you a true Bookmarklet NERD ?
 
 
 
