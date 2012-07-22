@@ -55,6 +55,12 @@ bookmarklet links within a page **mobile** bookmark-able.
 
 <br/><br/><br/>
 
+Just tap/touch/lick the bookmark in your bookmark bar, then do the same
+with the bookmarklet you'd like to save to you post-PC-era small factor
+smartphone, and the URL for the page changes and appends the bookmarklet
+code to itself. Bookmark the page, remove the `http://`part and you're
+done.
+
 # The Google Search Bookmarklets :
 
 If, like I was you're in a hurry, just drag the following links (yeah,
