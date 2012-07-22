@@ -37,10 +37,21 @@ bookmark bar
 
 Show me Google's results for current search in the past :
 
-1 year : <a class='bookmarklet' href='javascript:(function(){function%20getQueryString(){var%20a={},b=location.search.substring(1),c=/([^%26=]+)=([^%26]*)/g,d;while(d=c.exec(b)){a[decodeURIComponent(d[1])]=decodeURIComponent(d[2])}return%20a}p=getQueryString()[%22q%22];if(p){document.location.href=%22http://www.google.com/search%3Fas_qdr=y1%26q=%22+escape(p)}})();'>Past Year</a>
+<div class="bookmarkletcontainer">
+<a class='bookmarklet' href='javascript:(function(){function%20getQueryString(){var%20a={},b=location.search.substring(1),c=/([^%26=]+)=([^%26]*)/g,d;while(d=c.exec(b)){a[decodeURIComponent(d[1])]=decodeURIComponent(d[2])}return%20a}p=getQueryString()[%22q%22];if(p){document.location.href=%22http://www.google.com/search%3Fas_qdr=y1%26q=%22+escape(p)}})();'>Past Year</a>
+<a class='bookmarklet' href='javascript:(function(){function%20getQueryString(){var%20a={},b=location.search.substring(1),c=/([^%26=]+)=([^%26]*)/g,d;while(d=c.exec(b)){a[decodeURIComponent(d[1])]=decodeURIComponent(d[2])}return%20a}p=getQueryString()[%22q%22];if(p){document.location.href=%22http://www.google.com/search%3Fas_qdr=y2%26q=%22+escape(p)}})();'>Past 2 Years</a>
+<a class='bookmarklet' href='javascript:(function(){function%20getQueryString(){var%20a={},b=location.search.substring(1),c=/([^%26=]+)=([^%26]*)/g,d;while(d=c.exec(b)){a[decodeURIComponent(d[1])]=decodeURIComponent(d[2])}return%20a}p=getQueryString()[%22q%22];if(p){document.location.href=%22http://www.google.com/search%3Fas_qdr=y3%26q=%22+escape(p)}})();'>Past 3 Years</a>
 
 
-3 months : <a class='bookmarklet' href='javascript:(function(){function%20getQueryString(){var%20a={},b=location.search.substring(1),c=/([^%26=]+)=([^%26]*)/g,d;while(d=c.exec(b)){a[decodeURIComponent(d[1])]=decodeURIComponent(d[2])}return%20a}p=getQueryString()[%22q%22];if(p){document.location.href=%22http://www.google.com/search%3Fas_qdr=m6%26q=%22+escape(p)}})();'>Past 6 Months</a>
+<a class='bookmarklet' href='javascript:(function(){function%20getQueryString(){var%20a={},b=location.search.substring(1),c=/([^%26=]+)=([^%26]*)/g,d;while(d=c.exec(b)){a[decodeURIComponent(d[1])]=decodeURIComponent(d[2])}return%20a}p=getQueryString()[%22q%22];if(p){document.location.href=%22http://www.google.com/search%3Fas_qdr=m9%26q=%22+escape(p)}})();'>Past 9 Months</a>
+<a class='bookmarklet' href='javascript:(function(){function%20getQueryString(){var%20a={},b=location.search.substring(1),c=/([^%26=]+)=([^%26]*)/g,d;while(d=c.exec(b)){a[decodeURIComponent(d[1])]=decodeURIComponent(d[2])}return%20a}p=getQueryString()[%22q%22];if(p){document.location.href=%22http://www.google.com/search%3Fas_qdr=m6%26q=%22+escape(p)}})();'>Past 6 Months</a>
+<a class='bookmarklet' href='javascript:(function(){function%20getQueryString(){var%20a={},b=location.search.substring(1),c=/([^%26=]+)=([^%26]*)/g,d;while(d=c.exec(b)){a[decodeURIComponent(d[1])]=decodeURIComponent(d[2])}return%20a}p=getQueryString()[%22q%22];if(p){document.location.href=%22http://www.google.com/search%3Fas_qdr=m2%26q=%22+escape(p)}})();'>Past 2 Months</a>
+
+<a class='bookmarklet' href='javascript:(function(){function%20getQueryString(){var%20a={},b=location.search.substring(1),c=/([^%26=]+)=([^%26]*)/g,d;while(d=c.exec(b)){a[decodeURIComponent(d[1])]=decodeURIComponent(d[2])}return%20a}p=getQueryString()[%22q%22];if(p){document.location.href=%22http://www.google.com/search%3Fas_qdr=w2%26q=%22+escape(p)}})();'>Past 2 Weeks</a>
+<a class='bookmarklet' href='javascript:(function(){function%20getQueryString(){var%20a={},b=location.search.substring(1),c=/([^%26=]+)=([^%26]*)/g,d;while(d=c.exec(b)){a[decodeURIComponent(d[1])]=decodeURIComponent(d[2])}return%20a}p=getQueryString()[%22q%22];if(p){document.location.href=%22http://www.google.com/search%3Fas_qdr=d4%26q=%22+escape(p)}})();'>Past 4 Days</a>
+<a class='bookmarklet' href='javascript:(function(){function%20getQueryString(){var%20a={},b=location.search.substring(1),c=/([^%26=]+)=([^%26]*)/g,d;while(d=c.exec(b)){a[decodeURIComponent(d[1])]=decodeURIComponent(d[2])}return%20a}p=getQueryString()[%22q%22];if(p){document.location.href=%22http://www.google.com/search%3Fas_qdr=h2%26q=%22+escape(p)}})();'>Past 2 Hours</a>
+
+</div>
 
 # The Code
 

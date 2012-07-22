@@ -839,13 +839,19 @@ pre code {
 
 }
 
-
+div.bookmarkletcontainer{
+  width: 100%
+}
 a.bookmarklet {
+  display:block
+  float: left;
+  padding: 4px;
+  margin: 3px;
+  margin-left: 10px;
+
   color: rgba(220,220,220,1);
 
   text-decoration: none;
-  padding: 4px;
-  margin: 3px;
   text-shadow: -1px -1px 1px #1f1f1f;
   filter: dropshadow(color=#1f1f1f, offx=-1, offy=-1);
 
