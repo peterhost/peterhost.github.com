@@ -24,7 +24,7 @@ I wrote me somme bookmarklets.
 
 I guess you know what bookmarklets are (basically, a local anonymous
 javascript function launched by clicking/touching/licking a bookmark
-wich URL, or here rather URI begins with `javascript:` and which
+which URL, or here rather URI, begins with `javascript:` and which
 executes itself in the current environment of the loaded page/DOM).
 
 Here are some tools you can use to ease the process :
