@@ -51,6 +51,10 @@ Show me Google's results for current search in the past :
 <a class='bookmarklet' href='javascript:(function(){function%20getQueryString(){var%20a={},b=location.search.substring(1),c=/([^%26=]+)=([^%26]*)/g,d;while(d=c.exec(b)){a[decodeURIComponent(d[1])]=decodeURIComponent(d[2])}return%20a}p=getQueryString()[%22q%22];if(p){document.location.href=%22http://www.google.com/search%3Fas_qdr=d4%26q=%22+escape(p)}})();'>Past 4 Days</a>
 <a class='bookmarklet' href='javascript:(function(){function%20getQueryString(){var%20a={},b=location.search.substring(1),c=/([^%26=]+)=([^%26]*)/g,d;while(d=c.exec(b)){a[decodeURIComponent(d[1])]=decodeURIComponent(d[2])}return%20a}p=getQueryString()[%22q%22];if(p){document.location.href=%22http://www.google.com/search%3Fas_qdr=h2%26q=%22+escape(p)}})();'>Past 2 Hours</a>
 <br/><br/><br/>
+
+Then head on to `google.com`, do some reseach, and hit the bookmarklets
+to see the `search results` adapt.
+
 <br/><br/><br/>
 
 # The Code
