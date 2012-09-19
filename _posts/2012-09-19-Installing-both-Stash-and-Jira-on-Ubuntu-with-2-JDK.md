@@ -299,9 +299,9 @@ Here's a direct quote from the Ubuntu docs. By all means, follow the
 
 No need to reboot, you're done. Java7 installed, and easy to uninstall.
 
-> Now is the time to skip if you're only interested in `STASH`and
+> ***Now is the time to skip if you're only interested in `STASH`and
 > `JIRA`. I'll deal with MAVEN, ARTIFACTORY and some CLOJURE stuff here,
-> beforehand
+> beforehand***
 
 #Apache Tomcat 7
 
