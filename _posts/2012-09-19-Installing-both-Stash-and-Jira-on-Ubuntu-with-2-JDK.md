@@ -79,7 +79,7 @@ want.
 
 #Oracle Java 7
 
-##Add the PPA
+##Use this excellent PPA
 
 [ppa:webupd8team/java](https://launchpad.net/~webupd8team/archive/java)
 
@@ -88,7 +88,7 @@ want.
 ##dependancies
 
 the `add-apt-repository` command (which comes handy) requires the
-following repositories. As I'm lazy, ill use it (otherwise, just add the
+following packages. As I'm lazy tonight, ill use it (otherwise, just add the
 PPA the usual way).
 
     $ aptitude install python-software-properties
@@ -117,7 +117,7 @@ Update the repository cache :
 
 
 
-##Installing Oracle's Java7 form this PPA
+##Installing Oracle's Java7 from this PPA
 
 ###0. dependancies
 
@@ -154,35 +154,10 @@ Update the repository cache :
 
     Setting up java-common (0.43ubuntu2) ...
     Setting up oracle-java7-installer (7u5-0~webupd8~5) ...
-    Removing outdated cached downloads...
-    Downloading cookie...
-    --2012-07-28 00:14:39--  http://launchpadlibrarian.net/98645053/cookie.txt
-    Resolving launchpadlibrarian.net (launchpadlibrarian.net)... 91.189.89.229, 91.189.89.228
-    Connecting to launchpadlibrarian.net (launchpadlibrarian.net)|91.189.89.229|:80... connected.
-    HTTP request sent, awaiting response... 200 OK
-    Length: 1053 (1.0K) [text/plain]
-    Saving to: `./cookie.txt'
 
-         0K                                                      100% 96.5M=0s
+    (...)
 
-    2012-07-28 00:14:39 (96.5 MB/s) - `./cookie.txt' saved [1053/1053]
-
-    Downloading Oracle Java 7...
-    --2012-07-28 00:14:39--  http://download.oracle.com/otn-pub/java/jdk/7u5-b05/jdk-7u5-linux-x64.tar.gz
-    Resolving download.oracle.com (download.oracle.com)... 77.67.20.10, 77.67.20.17
-    Connecting to download.oracle.com (download.oracle.com)|77.67.20.10|:80... connected.
-    HTTP request sent, awaiting response... 302 Moved Temporarily
-    Location: https://edelivery.oracle.com/otn-pub/java/jdk/7u5-b05/jdk-7u5-linux-x64.tar.gz [following]
-    --2012-07-28 00:14:39--  https://edelivery.oracle.com/otn-pub/java/jdk/7u5-b05/jdk-7u5-linux-x64.tar.gz
-    Resolving edelivery.oracle.com (edelivery.oracle.com)... 92.122.246.174
-    Connecting to edelivery.oracle.com (edelivery.oracle.com)|92.122.246.174|:443... connected.
-    HTTP request sent, awaiting response... 302 Moved Temporarily
-    Location: http://download.oracle.com/otn-pub/java/jdk/7u5-b05/jdk-7u5-linux-x64.tar.gz?AuthParam=1343427413_9e078a853a329b50c33d5b07362f1ff3 [following]
-    --2012-07-28 00:14:40--  http://download.oracle.com/otn-pub/java/jdk/7u5-b05/jdk-7u5-linux-x64.tar.gz?AuthParam=1343427413_9e078a853a329b50c33d5b07362f1ff3
-    Connecting to download.oracle.com (download.oracle.com)|77.67.20.10|:80... connected.
-    HTTP request sent, awaiting response... 200 OK
-    Length: 81439763 (78M) [application/x-gzip]
-    Saving to: `jdk-7u5-linux-x64.tar.gz'
+    downloading stuff...
 
     (...)
 
