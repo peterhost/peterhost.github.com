@@ -960,6 +960,7 @@ Adapt the next two lines to your own install :
 
 
 
+<a href="#" id="jira"></a>
 # Atlassian Jira - bug tracker, reporting, and much more... and Java 6 !!
 
 
