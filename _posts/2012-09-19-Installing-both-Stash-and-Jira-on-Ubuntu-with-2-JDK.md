@@ -22,7 +22,7 @@ I've been a long time `Git` user, and as impressive as [gitosis](http://wiki.dre
 are, Atlassian's Stash just meets our needs.
 
 We tried it for 2 months, and don't ever want to look back : for 10
-bucks a year, that's be a stupid move for a small company like ours
+bucks a year, that'd be a stupid move for a small company like ours
 which has `almost no time at all`to dedicate to `sysadmin`.
 
 `Stash` was our first acquisition
@@ -47,7 +47,7 @@ same (already in PROD) Ubuntu 12.04 Server.
 **warning**: if you're only interested in the 'Jira' part, skip to the
 end of this tutorial.
 
-#INTRO
+#Intro
 
 >With all things Java it's far better (and easier)
 >to install quite everything manually (with the exception 
@@ -66,7 +66,7 @@ sources, but in a clean and `zero-dependancies` way, which is what we
 want.
 
 
->NB1: I do describe how to install `ant` but you should really use `maven`
+>NB1: I do not wish to use `ant`, nowadays you should really be using `maven`
 
 >NB2: installing by hand, when it's easy, means you can keep all your
 >java tools up-to-date without waiting for the Ubuntu repositories to
@@ -77,7 +77,7 @@ want.
 >like.
 
 
-#ORACLE JAVA 7
+#Oracle Java 7
 
 ##Add the PPA
 
@@ -328,7 +328,7 @@ No need to reboot, you're done. Java7 installed, and easy to uninstall.
 > `JIRA`. I'll deal with MAVEN, ARTIFACTORY and some CLOJURE stuff here,
 > beforehand
 
-#APACHE TOMCAT 7
+#Apache Tomcat 7
 
 >***It is IMPERATIVE*** to only install APACHE TOMCAT ***AFTER*** having
 correctly installed and configured Java and setup JAVA_HOME system-wide
@@ -350,7 +350,7 @@ correctly installed and configured Java and setup JAVA_HOME system-wide
 >OK
 
 
-#MAVEN And ARTIFACTORY
+#Maven and Artifactory
 
 ##MAVEN : Java's packager
 
@@ -590,7 +590,7 @@ Just for reference, two posts that should get you up and running
 [[Setting Up a Maven Repository with Artifactory]]
 [http://stackoverflow.com/a/2328284/474526](http://stackoverflow.com/a/2328284/474526)
 
-#CLOJURE
+#Clojure
 
 Clojure is so darn simple to install it should be forbidden.
 
@@ -626,7 +626,7 @@ Make it executable
 
 Done !
 
-#LEININGEN
+#Leiningen
 
 You **want** to use Leiningen.
 
@@ -751,14 +751,14 @@ Nothing more.
 And you have all you need for fully fledged Clojure development.
 
 
-# DATOMIC
+# Datomic
 
 No seriously : this one is not covered here :)
 
 
 
 
-#ATLASSIAN-STASH - Private GIT repo management
+#Atlassian Stash
 
 
 ##Quoting the Docs
@@ -985,7 +985,7 @@ Adapt the next two lines to your own install :
 
 
 
-# ATLASSIAN-JIRA - Bug tracker, reporting, and much more... and JAVA6 !!
+# Atlassian Jira - bug tracker, reporting, and much more... and Java 6 !!
 
 
 Now is the big `AAAAAARGHHH` : I first thought i was fucked. No way i
