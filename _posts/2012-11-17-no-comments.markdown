@@ -7,7 +7,9 @@ tags: comments
 intro: "I switched comments off recently for one simple reason : i don't
 think they add any value to the blog posts, I don't really care about
 being read, i just write those when I have gone through a tough install
-process, in order to help. That's all."
+process, in order to help. That's all.<br/><br/>Am I being antisocial ?
+on the contrary, i'd love an in depth involved chat on quite any
+subject, but not through bloody comments is all."
 intro-img: "2012-11-17-quiet.png"
 
 ---
